@@ -1,0 +1,111 @@
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 100%;
+    background: #03542e;
+    overflow: scroll;
+  }
+
+  #ulist {
+    list-style-type: none;
+    display: inline;
+    justify-content: space-around;
+
+  }
+  
+  .sidebar header {
+    font-family: Ubuntu;
+    font-size: 22px;
+    color: white;
+    text-align: center;
+    line-height: 60px;
+    background: #036638;
+    user-select: none;
+  }
+  
+  .sidebar ul li a {
+    display: block;
+    height: 100%;
+    width: 100%;
+    line-height: 55px;
+    font-size: 18px;
+    font-family: Ubuntu;
+    list-style-type: none;
+    text-decoration: none;
+    color: white;
+    padding-left: 40px;
+    box-sizing: border-box;
+    border-top: 1px solid rgba(255,255,255,.1);
+    border-bottom: 1px solid black;
+    transition: .4s;
+      
+  }
+  
+  ul li:hover {
+   padding-left: 20px; 
+  }
+  
+  #main-doc {
+   padding-top: 20px; 
+   margin-left: 250px; 
+  }
+  
+  .main-section header {
+    font-size: 35px; 
+    font-family: Ubuntu;
+  }
+  
+  .main-section p {
+    font-family: Ubuntu;
+    font-weight: bold;
+    color: #03542e;
+  }
+  
+  .main-section code {
+    color: #360663;
+    font-size: 14px;
+    font-weight: bold;
+  }
+  
+  .main-section ul {
+    font-size: 13px;
+    font-weight: bold;
+    color: #4f4e4d;
+  }
+
+  @media screen and (max-width: 550px) {
+    .sidebar {
+     position: fixed;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 80px;
+     }
+
+     .sidebar header {
+      display: flex;
+      font-size: 18px;
+
+     }
+
+    .sidebar ul {
+      display: inline;
+      width: 10%;
+      justify-content: space-around;
+      float: center; 
+      font-size: 12px;
+      list-style-type: none;
+      font-family: Ubuntu;
+      text-decoration: none;
+      color: white;
+      padding-right: 40px;
+            
+    }
+
+    #main-doc {
+      margin-left: 10px;
+      margin-top: 80px;
+    }
+   }
